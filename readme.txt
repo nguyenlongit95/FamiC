@@ -1,0 +1,17 @@
+- Hệ thống xây dựng dựa trên mô hình cơ bản là MVC và một số các Design pattern khác tùy vào chức năng của hệ thống
+- Dữ liệu được xây dựng đồng bộ tại CSDL và dữ liệu hiện thời
+- Tên biến viết thường từ đầu tiên và viết hoa từ thứ 2 ví dụ(idUser v.v...)
+- Tên phương thức phải viết hoa từ thứ 2 trở đi ví dụ (index, getUpdateCategories v.v...)
+- Tên bảng CSDL phải biết thường
+- Tên trường trong CSDL phải viết hoa toàn bộ
+- Route sẽ phân ra làm 2 phần
+  - Route cho phía quản trị admin/<tên group>/<route cụ thể cho từng chức năng>
+  - Route cho phía người dùng /<tên thành phần của web>/...
+- Route được viết theo cấu trúc như sau
+  - List danh sách: index
+  - get dữ liệu: getUpdate, getAdd v.v...
+  - post dữ liệu: postUpdate, postAdd v.v...
+- Giao diện được lưu trong réource
+- Tạo layout để chia nhỏ thành phần của website(layouts/header.blade.php v.v...)
+- Master sẽ quy định mẫu chung cho tất cả các trang con của website, không được đụng vào master
+- thêm <base src="{{ asset('') }}"> để dẫn đúng đường link tới CSS, JS
